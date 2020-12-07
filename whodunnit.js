@@ -13,6 +13,8 @@ const scenario = {
   const verdict = declareMurderer();
   console.log(verdict);
 
+// MY PREDICTION: The verdict will be Miss Scarlet as murderer. The const declareMurderer is passed to verdict once it has been executed.
+
 
 //  EPISODE 1 ------------------------------------
 
