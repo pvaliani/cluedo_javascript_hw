@@ -116,6 +116,28 @@
 
 // EPISODE 6
 
+let murderer = 'Colonel Mustard';
+
+const changeMurderer = function() {
+  murderer = 'Mr. Green';
+
+  const plotTwist = function() {
+    murderer = 'Mrs. White';
+  }
+
+  plotTwist();
+}
+
+const declareMurderer = function () {
+  return `The murderer is ${murderer}.`;
+}
+
+changeMurderer();
+const verdict = declareMurderer();
+console.log(verdict);
+
+// MY PREDICTION: Mrs White - plot twist method call means that within the change murderer function there is a change of murderer and the declareMurderer method will be updated.
+
 
 
 //  EPISODE 6 ------------------------------------
