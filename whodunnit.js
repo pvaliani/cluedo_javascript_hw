@@ -116,25 +116,25 @@
 
 // EPISODE 6
 
-let murderer = 'Colonel Mustard';
+// let murderer = 'Colonel Mustard';
 
-const changeMurderer = function() {
-  murderer = 'Mr. Green';
+// const changeMurderer = function() {
+//   murderer = 'Mr. Green';
 
-  const plotTwist = function() {
-    murderer = 'Mrs. White';
-  }
+//   const plotTwist = function() {
+//     murderer = 'Mrs. White';
+//   }
 
-  plotTwist();
-}
+//   plotTwist();
+// }
 
-const declareMurderer = function () {
-  return `The murderer is ${murderer}.`;
-}
+// const declareMurderer = function () {
+//   return `The murderer is ${murderer}.`;
+// }
 
-changeMurderer();
-const verdict = declareMurderer();
-console.log(verdict);
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
 
 // MY PREDICTION: Mrs White - plot twist method call means that within the change murderer function there is a change of murderer and the declareMurderer method will be updated.
 
@@ -144,8 +144,35 @@ console.log(verdict);
 
 
 // EPISODE 7
+let murderer = 'Professor Plum';
 
+const changeMurderer = function() {
+  murderer = 'Mr. Green';
 
+  const plotTwist = function() {
+    let murderer = 'Colonel Mustard';
+
+    const unexpectedOutcome = function() {
+      murderer = 'Miss Scarlet';
+    }
+
+    unexpectedOutcome();
+  }
+
+  plotTwist();
+}
+
+// colonel mustard at this point 
+
+const declareMurderer = function() {
+  return `The murderer is ${murderer}.`;
+}
+
+changeMurderer();
+const verdict = declareMurderer();
+console.log(verdict);
+
+// MY PREDICTION: Mr Green as globally declared above other functions
 
 //  EPISODE  7 ------------------------------------
 
